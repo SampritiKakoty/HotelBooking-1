@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { HttpModule } from '@angular/http';
 import { DataService } from './data.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,HttpModule
