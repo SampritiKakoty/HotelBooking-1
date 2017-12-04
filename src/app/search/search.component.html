@@ -14,7 +14,17 @@
               <div class="col-md-10">
                 <span id="search-text">Search Hotels</span>
                 <div id="search">
-                  
+
+                  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="form-inline">
+                    <b><label>Search String</label></b>
+                    <input type="text" [formControl]='search'>
+                    <b><label>Maximum Results</label></b>
+                    <select  [formControl]='numb'>
+                      <option *ngFor="let num of number" [value]="num">{{num}}</option>
+                    </select> 
+                    <input type="submit" class="btn btn-success" id="button">
+                  </form>
+
                 </div>
               </div>
         </div>
