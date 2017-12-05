@@ -17,7 +17,7 @@ export class SearchComponent implements OnInit {
   search:AbstractControl;
   numb:AbstractControl;
 
-  users: Array<any>;
+  users;
   
 
   constructor(private formBuilder:FormBuilder, private _dataService: DataService,private router:Router) 

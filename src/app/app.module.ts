@@ -4,8 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-
-import { HttpModule } from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 import { DataService } from './data.service';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
@@ -20,7 +19,7 @@ import { ResultComponent } from './result/result.component';
     ResultComponent
   ],
   imports: [
-    BrowserModule,HttpModule,FormsModule,ReactiveFormsModule,
+    BrowserModule,HttpClientModule,FormsModule,ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'home' , component: HomeComponent},
       {path: 'search', component: SearchComponent},
